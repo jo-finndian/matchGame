@@ -12,7 +12,7 @@ html
     |
     .stat-bar-index.stat-bar
       #unauthed
-        h2 Login / Signup
+        h2 Welcome, Earthling
         ul
           li
             a(href="register") Register
@@ -20,15 +20,16 @@ html
             a(href='/login' id="logout") Login
       |
       #authed
-        h2#welcome
+        h2#welcome Welcome, Earthling
         ul
-        li
-          a(href='/logout' id="logout") Logout
+          li
+            a(href='/logout' id="logout") Logout
     |
     |
     script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js')
     script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js')
     script(src='firebase.js')
+    script(src='getUser.js')
     script.
       document.addEventListener('DOMContentLoaded', function() {
         console.log("working")
