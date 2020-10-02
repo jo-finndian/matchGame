@@ -1,0 +1,20 @@
+{
+  "name": "matchgame_pug",
+  "version": "1.0.0",
+  "description": "match game using nodeJS and pug",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sandra mannila",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "express": "^4.17.1",
+    "firebase": "^7.21.1",
+    "firebase-admin": "^9.2.0",
+    "pug": "^3.0.0"
+  }
+}

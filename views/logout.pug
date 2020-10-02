@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Test
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', type='text/css', href='style.css')
+    link(rel="stylesheet" href="https://use.typekit.net/frh5qiz.css")
+  body
+    ul
+      li
+        a(href="/") Home
+      li
+        a(href="register") Register
+      li
+        a(href="login") Login
+    |
+    p You've been logged out successfully.
+
+    script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js')
+    script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js')
+    script(src='firebase.js')
+    script(src='logout.js')

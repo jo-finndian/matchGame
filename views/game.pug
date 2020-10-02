@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Match Game
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', type='text/css', href='style.css')
+    link(rel="stylesheet" href="https://use.typekit.net/frh5qiz.css")
+  body
+    .game
+        .header
+            h2 Match Game
+        |
+        .stat-bar
+            h2#welcome
+            |
+            p#strikes 
+            |
+            .logout
+                a(href='/logout' id="logout") Logout
+        |
+        #card-grid(class="hidden")
+        |
+        button#start-game Start Game
+        |
+    #playagain(class="hidden")
+        p#play-msg
+        |
+        button.restart(onclick="resetGame()") Play Again?
+        |
+        a(href='/logout' id="nothanks") No thanks.
+    |
+    script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js')
+    script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js')
+    script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js')
+    script(src='firebase.js')
+    script(src='getUser.js')
+    script(src='game-engine.js')

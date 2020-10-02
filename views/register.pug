@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Test
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', type='text/css', href='style.css')
+    link(rel="stylesheet" href="https://use.typekit.net/frh5qiz.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+  body
+    .header
+      h2 Match Game
+    |
+    .stat-bar-index.stat-bar
+      h2 Register
+      ul
+        li
+          a(href="login") Login
+      |
+      form
+        p First Name
+        input(type="text" id="first")
+        |
+        p Last Name
+        input(type="text" id="last")
+        p Email
+        input(type="text" id="email")
+        |
+        p Password
+        input(type="password" id="password")
+        br
+        |
+        input(type="button" value="Register" id="register")
+  
+  script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js')
+  script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js')
+  script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js')
+  script(src='firebase.js')
+  script(src='register.js')

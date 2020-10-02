@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="218" height="268" viewBox="0 0 218 268">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.863" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8e07de"/>
+      <stop offset="0.399" stop-color="#b431fc"/>
+      <stop offset="1" stop-color="#cc12cc"/>
+    </linearGradient>
+    <filter id="Rectangle_1" x="0" y="0" width="218" height="268" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Icon_awesome-coffee" x="49.351" y="83.648" width="118.301" height="88.205" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Icon_awesome-coffee-2" x="49.351" y="83.648" width="118.301" height="88.205" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_1" x="124.17" y="97.099" width="33.527" height="38.912" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_2" x="124.17" y="95.099" width="33.527" height="38.912" filterUnits="userSpaceOnUse">
+      <feOffset dy="-1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_1)">
+      <g id="Rectangle_1-2" data-name="Rectangle 1" transform="translate(9 6)" stroke="#6c1ffc" stroke-width="8" fill="url(#linear-gradient)">
+        <rect width="200" height="250" rx="50" stroke="none"/>
+        <rect x="4" y="4" width="192" height="242" rx="46" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Icon_awesome-coffee)">
+      <path id="Icon_awesome-coffee-3" data-name="Icon awesome-coffee" d="M30.093,57.411H60.18A15.048,15.048,0,0,0,75.224,42.367h5.015a20.059,20.059,0,0,0,0-40.117H18.81a3.752,3.752,0,0,0-3.761,3.761V42.367A15.048,15.048,0,0,0,30.093,57.411ZM80.239,12.279a10.029,10.029,0,1,1,0,20.059H75.224V12.279Zm7.475,60.176H7.574c-7.459,0-9.559-10.029-5.641-10.029H93.34c3.918,0,1.849,10.029-5.626,10.029Z" transform="translate(58.36 93.4)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Icon_awesome-coffee-2)">
+      <path id="Icon_awesome-coffee-4" data-name="Icon awesome-coffee" d="M30.093,57.411H60.18A15.048,15.048,0,0,0,75.224,42.367h5.015a20.059,20.059,0,0,0,0-40.117H18.81a3.752,3.752,0,0,0-3.761,3.761V42.367A15.048,15.048,0,0,0,30.093,57.411ZM80.239,12.279a10.029,10.029,0,1,1,0,20.059H75.224V12.279Zm7.475,60.176H7.574c-7.459,0-9.559-10.029-5.641-10.029H93.34c3.918,0,1.849,10.029-5.626,10.029Z" transform="translate(58.36 93.4)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M723.682,198.789V219.7h7.054s8.836-2.393,8.461-11.052-8.461-9.859-8.461-9.859Z" transform="translate(-590.51 -93.69)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Path_2)">
+      <path id="Path_2-2" data-name="Path 2" d="M723.682,198.789V219.7h7.054s8.836-2.393,8.461-11.052-8.461-9.859-8.461-9.859Z" transform="translate(-590.51 -93.69)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

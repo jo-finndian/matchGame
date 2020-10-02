@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Test
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', type='text/css', href='style.css')
+    link(rel="stylesheet" href="https://use.typekit.net/frh5qiz.css")
+  body
+    .header
+      h2 Match Game
+    |
+    .stat-bar-index.stat-bar
+      #unauthed
+        h2 Login / Signup
+        ul
+          li
+            a(href="register") Register
+          li
+            a(href='/login' id="logout") Login
+      |
+      #authed
+        h2#welcome
+        ul
+        li
+          a(href='/logout' id="logout") Logout
+    |
+    |
+    script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js')
+    script(src='https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js')
+    script(src='firebase.js')
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log("working")
+        const unauthed = document.getElementById('unauthed');
+        const authed = document.getElementById('authed');
+
+        unauthed.style.display = 'block';
+        authed.style.display = 'none';
+
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            console.log('user', user);
+            unauthed.style.display = 'none';
+            authed.style.display = 'block';
+          } else {
+          }
+        });
+      });
