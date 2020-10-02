@@ -8,6 +8,7 @@ var admin = require('firebase-admin');
 var serviceAccount = require('./serviceAccountKey.json')
 
 var app = express();
+let httpServer = http.createServer(app)
 
 var firebaseConfig = {
   apiKey: "AIzaSyDKEIZmkDEfeTR2xT-2OnKc8k3W1fY4JdE",
@@ -59,7 +60,10 @@ app.post('/game', (req, res) => {
 
 });
 
-
-app.listen(3000, () => { //make server listen on port 3000
-    console.log('listening on *:3000');
+httpServer.listen(process.env.PORT || 3000, function () {
+  console.log("SERVER STARTED PORT: 3000");
 });
+
+// app.listen(3000, () => { //make server listen on port 3000
+//     console.log('listening on *:3000');
+// });
