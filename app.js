@@ -1,5 +1,6 @@
 var bodyParser = require('body-parser'); //Express initializes express to be a function handler that you can supply to an HTTP server 
 var express = require('express'); //Express initializes express to be a function handler that you can supply to an HTTP server 
+const http = require("http");
 
 var pug = require('pug');
 var firebase = require('firebase');
@@ -45,25 +46,17 @@ app.get('/login', (req, res) => { //We define a route handler '/' that gets call
 });
 
 app.get('/logout', (req, res) => { //We define a route handler '/' that gets called when we hit our website home
-    res.render('logout'); //logout
+  res.render('logout'); //logout
 });
 
 app.get('/register', (req, res) => { //We define a route handler '/' that gets called when we hit our website home
-    res.render('register'); //register
+  res.render('register'); //register
 });
 
 app.get('/game', (req, res) => { //We define a route handler '/' that gets called when we hit our website home
   res.render( 'game');
 });
 
-app.post('/game', (req, res) => {
-
-});
-
 httpServer.listen(process.env.PORT || 3000, function () {
   console.log("SERVER STARTED PORT: 3000");
 });
-
-// app.listen(3000, () => { //make server listen on port 3000
-//     console.log('listening on *:3000');
-// });
