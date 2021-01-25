@@ -12,7 +12,7 @@ var app = express();
 let httpServer = http.createServer(app)
 
 var firebaseConfig = {
-  apiKey: "AIzaSyDKEIZmkDEfeTR2xT-2OnKc8k3W1fY4JdE",
+  apiKey: "YOURAPIKEY",
   authDomain: "matchgame-bfb00.firebaseapp.com",
   databaseURL: "https://matchgame-bfb00.firebaseio.com",
   projectId: "matchgame-bfb00",
